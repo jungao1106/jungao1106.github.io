@@ -6,7 +6,9 @@ redirect_from:
   - /about/
   - /about.html
 ---
-My name is **Jun Gao (高俊)**, a third-year master's student at Soochow University supervised by [Prof. Ziqiang Cao](https://scholar.google.com/citations?hl=zh-CN&user=06ITfcEAAAAJ). Now, I am a research assistant working for [Prof. Wenjie Li](https://scholar.google.com/citations?user=Rx5swD4AAAAJ&hl=zh-CN) at the [NLP Group](https://polyunlp.github.io) of The Hong Kong Polytechnic University. Please check my [CV](https://jungao1106.github.io/files/Resume_GAO.pdf) for further information.
+My name is **Jun Gao (高俊)**, a third-year master's student at Soochow University supervised by [Prof. Ziqiang Cao](https://scholar.google.com/citations?hl=zh-CN&user=06ITfcEAAAAJ).
+I joined the [LINS Lab](https://lins-lab.github.io/group/) of Westlake University as a visiting student fortunately supervised by [Prof. Tao LIN](https://scholar.google.com/citations?hl=zh-CN&user=QE9pa_cAAAAJ).
+Before that, I was a research assistant working for [Prof. Wenjie Li](https://scholar.google.com/citations?user=Rx5swD4AAAAJ&hl=zh-CN) at the [NLP Group](https://polyunlp.github.io) of The Hong Kong Polytechnic University. Please check my [CV](https://jungao1106.github.io/files/Resume_GAO.pdf) for further information.
 
 Outside of research, I excel in cycling 🚴, taekwondo 🥋, running 🏃, badminton 🏸, and basketball 🏀
 
