@@ -6,9 +6,10 @@ redirect_from:
   - /about/
   - /about.html
 ---
-My name is **Jun Gao (高俊)**, a third-year master's student at Soochow University supervised by [Prof. Ziqiang Cao](https://scholar.google.com/citations?hl=zh-CN&user=06ITfcEAAAAJ).
-I joined the [LINS Lab](https://lins-lab.github.io/group/) of Westlake University as a visiting student fortunately supervised by [Prof. Tao LIN](https://scholar.google.com/citations?hl=zh-CN&user=QE9pa_cAAAAJ).
-Before that, I was a research assistant working for [Prof. Wenjie Li](https://scholar.google.com/citations?user=Rx5swD4AAAAJ&hl=zh-CN) at the [NLP Group](https://polyunlp.github.io) of The Hong Kong Polytechnic University. Please check my [CV](https://jungao1106.github.io/files/Resume_GAO.pdf) for further information.
+**Jun Gao (高俊)** is a third-year master's student at Soochow University supervised by [Prof. Ziqiang Cao](https://scholar.google.com/citations?hl=zh-CN&user=06ITfcEAAAAJ).
+Before graduation, I was a research assistant working for [Prof. Wenjie Li](https://scholar.google.com/citations?user=Rx5swD4AAAAJ&hl=zh-CN) at the [NLP Group](https://polyunlp.github.io) of The Hong Kong Polytechnic University.
+I also joined the [LINS Lab](https://lins-lab.github.io/group/) of Westlake University as a visitor fortunately supervised by [Prof. Tao LIN](https://scholar.google.com/citations?hl=zh-CN&user=QE9pa_cAAAAJ).
+Please check my [CV](https://jungao1106.github.io/files/Resume_GAO.pdf) for further information.
 
 Outside of research, I excel in cycling 🚴, taekwondo 🥋, running 🏃, badminton 🏸, and basketball 🏀
 
@@ -20,10 +21,14 @@ I am broadly interested in Natural Language Processing and Multidomal Fusion. My
 - (1). How to prompt large models efficiently.
 - (2). How to help large models understand our beautiful worlds faithfully.
 
-<span style="color:red">*😀I am actively looking for a 25 PhD offer and am open to discussion. Please feel free to drop me an e-mail if you are interested.*</span>
+<span style="color:red">*😀If you are interesed with me, please feel free to drop me an e-mail.*</span>
 
 News
 ======
+[2024. 12] Got a paper accepted by AAAI 2025.
+
+[2024. 10] I joined the [LINS Lab](https://lins-lab.github.io/group/) of Westlake University as a visitor.
+
 [2024. 8] Got a paper accepted by Information Procession & Management (IP&M).
 
 [2024. 7] Started my RA life. Co-working with [Postdoc‌. Yongqi Li](https://liyongqi67.github.io)
@@ -45,18 +50,25 @@ Most recent publications on [Google Scholar](https://scholar.google.com/citation
 
 \* indicates equal contribution
 
+
+- **Interleaved-Modal Chain-of-Thought** (Arxiv)
+
+  **Jun Gao**, Yongqi Li, Ziqiang Cao, Wenjie Li
+
+
+- **AIM: Let Any Multi-modal Large Language Models Embrace Efficient In-Context Learning** (AAAI 2025)
+
+  **Jun Gao**, Qian Qiao, Ziqiang Cao, Zili Wang, Wenjie Li
+
+
 - **SelfCP: Compressing over-limit prompt via the frozen large language model itself**  (Information Processing & Management)
 
   **Jun Gao**, Ziqiang Cao, Wenjie Li
 
 
-- **AIM: Let Any Multi-modal Large Language Models Embrace Efficient In-Context Learning** (Arxiv)
-
-  **Jun Gao**, Qian Qiao, Ziqiang Cao, Zili Wang, Wenjie Li
-
 - **DNTextSpotter: Arbitrary-Shaped Scene Text Spotting via Improved Denoising Training** (ACM MM 2024)
 
-  Yu Xie<sup>\*</sup>, Qian Qiao<sup>\*</sup>, **Jun Gao<sup>\*</sup>**, Tianxiang Wu, Shaoyao Huang, Jiaqing Fan, Ziqiang Cao, Zili Wang, Yue Zhang, Jielei Zhang, Huyang Sun
+  Yu Xie<sup>\*</sup>, Qian Qiao<sup>\*</sup>, **Jun Gao**, Tianxiang Wu, Shaoyao Huang, Jiaqing Fan, Ziqiang Cao, Zili Wang, Yue Zhang, Jielei Zhang, Huyang Sun
 
 - **Unifying Demonstration Selection and Compression for In-Context Learning** (Arxiv)
 
