@@ -3,32 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jun Gao | 高俊 - Zhejiang University</title>
+  <title>Jun Gao | 高俊 - AI Researcher</title>
   <link rel="icon" href="images/zju.png?v=2" />
   <link rel="shortcut icon" href="images/zju.ico">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    .section-title {
-      @apply text-3xl md:text-4xl font-extrabold mb-6 border-l-4 border-blue-500 pl-3;
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
-
+    .section-title {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+      padding-left: 1rem;
+      border-left: 0.35rem solid #0ea5e9;
+      line-height: 1.1;
+    }
+    @media (min-width: 768px) {
+      .section-title {
+        font-size: 2.5rem;
+      }
+    }
     .card {
-      @apply bg-white rounded-2xl shadow-md overflow-hidden transition hover:shadow-lg;
+      background-color: #ffffff;
+      border-radius: 1.5rem;
+      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+      overflow: hidden;
+      transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 24px 48px rgba(15, 23, 42, 0.12);
+    }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 9999px;
+      background-color: #f8fafc;
+      padding: 0.35rem 0.75rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #334155;
     }
   </style>
 </head>
 
-<body class="bg-gray-100 text-gray-800 leading-relaxed">
-  <header class="bg-white shadow-sm py-6 mb-10">
-    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-6">
-      <img src="images/photo.jpg" alt="Jun Gao portrait" class="w-32 h-32 rounded-full shadow-md object-cover" />
-      <div>
-        <h1 class="text-4xl font-extrabold">Jun Gao (高俊)</h1>
-        <p class="text-gray-700 mt-1 text-lg">Ph.D. Student @ Zhejiang University</p>
-        <p class="text-sm text-gray-600 mt-2">
-          Email: <a href="mailto:junegao1106@gmail.com" class="text-blue-600 hover:underline">junegao1106@gmail.com</a>
+<body class="bg-slate-50 text-slate-900 antialiased">
+  <header class="bg-white border-b border-slate-200/80 py-6 mb-10">
+    <div class="max-w-6xl mx-auto px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-6">
+      <img src="images/photo.jpg" alt="Jun Gao portrait" class="w-32 h-32 rounded-full shadow-xl object-cover" />
+      <div class="flex-1">
+        <p class="text-sm uppercase tracking-[0.24em] text-sky-600 font-semibold">AI & Multimodal Research</p>
+        <h1 class="mt-3 text-4xl md:text-5xl font-extrabold tracking-tight">Jun Gao (高俊)</h1>
+        <p class="mt-3 text-lg text-slate-600 max-w-2xl">
+          Ph.D. student in AI at Zhejiang University, focusing on large language models, and model efficiency.
         </p>
-        <div class="flex space-x-6 mt-3 text-blue-600">
+        <div class="mt-5 flex flex-wrap gap-3 text-slate-700">
+          <span class="tag">Zhejiang University</span>
+          <span class="tag">Ph.D. 2025–2029</span>
+          <span class="tag">Advisor: Xiaoxue Ren</span>
+        </div>
+        <div class="mt-5 flex flex-wrap gap-4 text-sky-600">
+          <a href="mailto:junegao1106@gmail.com" class="hover:underline">junegao1106@gmail.com</a>
           <a href="https://scholar.google.com/citations?user=9vR57s8AAAAJ&hl=zh-CN" target="_blank" class="hover:underline">Google Scholar</a>
           <a href="https://github.com/jungao1106/" target="_blank" class="hover:underline">GitHub</a>
         </div>
@@ -36,139 +72,144 @@
     </div>
   </header>
 
-  <main class="max-w-6xl mx-auto px-6">
-    <!-- About Me -->
-    <section class="mb-16">
-      <h2 class="section-title" style="font-size: larger;">About Me</h2>
-      <p class="text-gray-700 text-justify text-lg">
-        I am a Ph.D. student (2025–2029) at Zhejiang University in Hangzhou, advised by
-        <a href="https://xiaoxuerens.github.io" target="_blank" class="text-blue-600 hover:underline">Xiaoxue Ren</a> (ZJU100 Young Professor).
-        Currently, I am a research intern in the Multimodal Team of Soul AI (So Aura Talent Program).
-        Before that, I obtained my master's degree from the School of Computer Science and Technology at Soochow University in 2025, advised by
-        <a href="https://scholar.google.com/citations?user=06ITfcEAAAAJ" target="_blank" class="text-blue-600 hover:underline">Prof. Ziqiang Cao</a>.
-        My research interests include VLMs, code intelligence, and human‑centric AI.
-      </p>
-    </section>
-
-    <!-- Selected Publications -->
-    <section class="mb-16">
-      <h2 class="section-title" style="font-size: larger;">Selected Publications</h2>
-      <div class="space-y-6">
-    
-        <!-- Paper Card -->
-        <div class="card flex flex-col md:flex-row items-start p-6 gap-6">
-          <img src="images/icot_teaser.png" class="w-full md:w-48 object-cover rounded-lg flex-shrink-0">
-          <div class="flex-1">
-            <h3 class="text-xl font-bold mb-1">Interleaved-modal Chain-of-Thought</h3>
-            <p class="text-gray-600 mb-1"><strong>Jun Gao</strong>, Yongqi Li, Ziqiang Cao, Wenjie Li</p>
-            <p class="text-sm text-gray-500 italic mb-2">CVPR 2025 (Main)</p>
-            <div class="space-x-4 text-blue-600">
-              <a href="https://arxiv.org/abs/2411.19488" target="_blank" class="hover:underline">[arXiv]</a>
-              <a href="https://github.com/jungao1106/ICoT" target="_blank" class="hover:underline">[Code]</a>
+  <main class="max-w-6xl mx-auto px-6 lg:px-8 space-y-12">
+    <section id="about" class="grid gap-8 lg:grid-cols-[1.7fr_1fr] items-start">
+      <div>
+        <h2 class="section-title">About Me</h2>
+        <p class="text-slate-700 leading-8 text-lg">
+          I am a Ph.D. student at Zhejiang University (2025–2029), advised by
+          <a href="https://xiaoxuerens.github.io" target="_blank" class="text-sky-600 hover:underline">Xiaoxue Ren</a>.
+          My research centers on large language models, and model efficiency. Currently, I research on agentic learning under SWE (Software Engineering) scenario, if you are interested in this topic, please feel free to contact me!
+        </p>
+        <div class="mt-8 grid gap-4 md:grid-cols-2">
+          <div class="card p-6 border border-slate-200">
+            <p class="text-sm uppercase tracking-[0.24em] text-slate-500 mb-3">Research Interests</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tag">Multimodal Learning</span>
+              <span class="tag">Large Language Models</span>
+              <span class="tag">Model Efficiency</span>
+              <span class="tag">Agentic Learning</span>
             </div>
           </div>
-        </div>
-    
-        <!-- Paper Card -->
-        <div class="card flex flex-col md:flex-row items-start p-6 gap-6">
-          <img src="images/uniicl_teaser.png" class="w-full md:w-48 object-cover rounded-lg flex-shrink-0">
-          <div class="flex-1">
-            <h3 class="text-xl font-bold mb-1">UniICL: An Efficient ICL Framework Unifying Compression, Selection, and Generation</h3>
-            <p class="text-gray-600 mb-1"><strong>Jun Gao</strong>, Qi Lv, Zili Wang, Tianxiang Wu, Ziqiang Cao, Wenjie Li</p>
-            <p class="text-sm text-gray-500 italic mb-2">ACL 2025 (Main)</p>
-            <a href="https://aclanthology.org/2025.acl-long.24.pdf" target="_blank" class="text-blue-600 hover:underline">[arXiv]</a>
-            <a href="https://github.com/jungao1106/SelfCP" target="_blank" class="hover:underline">[Code]</a>
+          <div class="card p-6 border border-slate-200">
+            <p class="text-sm uppercase tracking-[0.24em] text-slate-500 mb-3">Academic Profile</p>
+            <ul class="space-y-3 text-slate-700">
+              <li><strong>Ph.D.</strong> Computer Science, Zhejiang University</li>
+              <li><strong>M.S.</strong> Computer Science, Soochow University, 2025</li>
+              <li><strong>Primary Advisor:</strong> Xiaoxue Ren</li>
+            </ul>
           </div>
         </div>
-    
-        <!-- Paper Card -->
-        <div class="card flex flex-col md:flex-row items-start p-6 gap-6">
-          <img src="images/aim_teaser.png" class="w-full md:w-48 object-cover rounded-lg flex-shrink-0">
-          <div class="flex-1">
-            <h3 class="text-xl font-bold mb-1">AIM: Let Any Multimodal Large Language Models Embrace Efficient In-Context Learning</h3>
-            <p class="text-gray-600 mb-1"><strong>Jun Gao</strong>, Qian Qiao, Tianxiang Wu, Zili Wang, Ziqiang Cao, Wenjie Li</p>
-            <p class="text-sm text-gray-500 italic mb-2">AAAI 2025 (Main)</p>
-            <a href="https://ojs.aaai.org/index.php/AAAI/article/view/32316" target="_blank" class="text-blue-600 hover:underline">[arXiv]</a>
-            <a href="https://github.com/jungao1106/SelfCP" target="_blank" class="hover:underline">[Code]</a>
+      </div>
+
+      <aside class="card p-6 border border-slate-200 bg-slate-50">
+        <h3 class="text-2xl font-semibold mb-4">News</h3>
+        <ul class="space-y-3 text-slate-700 text-sm leading-6">
+          <li>🎉 4 papers accepted by <strong>ACL 2026</strong>.</li>
+          <li>💼 I Join Soul App’s 'Soul Aura' Talent Program as Research Intern. </li>
+          <li>🎉 1 paper accepted by <strong>ACL 2025</strong>.</li>
+          <li>💼 Visiting Westlake University, under the supervision of <a href="https://tlin-taolin.github.io" target="_blank" class="text-sky-600 hover:underline">Tao Lin</a>.</li>
+          <li>🎉 1 paper accepted by <strong>CVPR 2025</strong>.</li>
+          <li>💼 Joined the <a href="https://polyunlp.github.io/home" target="_blank" class="text-sky-600 hover:underline">PolyU NLP group</a> as Research Assistant, working with <a href="https://liyongqi67.github.io" target="_blank" class="text-sky-600 hover:underline">Yongqi Li</a> and <a href="https://polyunlp.github.io/home" target="_blank" class="text-sky-600 hover:underline">Prof. Wenjie Li</a>.</li>
+          <li>🎉 1 paper accepted by <strong>AAAI 2025</strong>.</li>
+          <li>🎉 1 paper accepted by <strong>Information Processing and Management</strong>.</li>
+          <li>🎉 1 paper accepted by <strong>IJCNN 2024</strong> (oral).</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="publications">
+      <h2 class="section-title">Selected Publications</h2>
+      <div class="grid gap-4 xl:grid-cols-3 lg:grid-cols-2">
+        <article class="card p-5 border border-slate-200">
+          <h3 class="text-lg font-semibold mb-2">Interleaved-modal Chain-of-Thought</h3>
+          <p class="text-slate-600 mb-2"><strong>Jun Gao</strong>, Yongqi Li, Ziqiang Cao, Wenjie Li</p>
+          <p class="text-slate-500 italic text-sm mb-3">CVPR 2025 (Main)</p>
+          <div class="flex flex-wrap gap-3 text-sky-600 text-sm">
+            <a href="https://arxiv.org/abs/2411.19488" target="_blank" class="hover:underline">arXiv</a>
+            <a href="https://github.com/jungao1106/ICoT" target="_blank" class="hover:underline">Code</a>
           </div>
-        </div>
-    
+        </article>
+        <article class="card p-5 border border-slate-200">
+          <h3 class="text-lg font-semibold mb-2">UniICL: An Efficient ICL Framework</h3>
+          <p class="text-slate-600 mb-2"><strong>Jun Gao</strong>, Qi Lv, Zili Wang, Tianxiang Wu, Ziqiang Cao, Wenjie Li</p>
+          <p class="text-slate-500 italic text-sm mb-3">ACL 2025 (Main)</p>
+          <div class="flex flex-wrap gap-3 text-sky-600 text-sm">
+            <a href="https://aclanthology.org/2025.acl-long.24.pdf" target="_blank" class="hover:underline">arXiv</a>
+            <a href="https://github.com/jungao1106/SelfCP" target="_blank" class="hover:underline">Code</a>
+          </div>
+        </article>
+        <article class="card p-5 border border-slate-200">
+          <h3 class="text-lg font-semibold mb-2">AIM: Efficient In-Context Learning</h3>
+          <p class="text-slate-600 mb-2"><strong>Jun Gao</strong>, Qian Qiao, Tianxiang Wu, Zili Wang, Ziqiang Cao, Wenjie Li</p>
+          <p class="text-slate-500 italic text-sm mb-3">AAAI 2025 (Main)</p>
+          <div class="flex flex-wrap gap-3 text-sky-600 text-sm">
+            <a href="https://ojs.aaai.org/index.php/AAAI/article/view/32316" target="_blank" class="hover:underline">arXiv</a>
+            <a href="https://github.com/jungao1106/SelfCP" target="_blank" class="hover:underline">Code</a>
+          </div>
+        </article>
       </div>
     </section>
 
-
-    <!-- Other Publications -->
-    <section class="mb-16">
-      <h2 class="section-title" style="font-size: larger;">Other Publications</h2>
-      <div class="space-y-6">
-        <div class="card p-6">
+    <section id="other-publications">
+      <h2 class="section-title">Other Publications</h2>
+      <ul class="space-y-4 text-slate-700">
+        <li class="p-4 border border-slate-200 rounded-3xl bg-white">
+          <p class="font-semibold">CoRE: A Fine-Grained Code Reasoning Benchmark Beyond Output Prediction</p>
+          <p class="text-slate-600 mt-2"><strong>Authors:</strong> <strong>Jun Gao</strong>, Yun Peng, Qian Qiao, Changhai Zhou, Yuhua Zhou, Shiyang Zhang, Shichao Weng, Zhenchang Xing, Xiaoxue Ren</p>
+          <p class="text-slate-500 italic mt-1">ACL 2026 Findings</p>
+          <div class="mt-3 flex flex-wrap gap-3 text-sky-600 text-sm">
+            <span>arXiv pending</span>
+            <a href="https://github.com/ZJUSig/CoRE" target="_blank" class="hover:underline">Repo</a>
+          </div>
+        </li>
+        <li class="p-4 border border-slate-200 rounded-3xl bg-white">
           <p class="font-semibold">SelfCP: Compressing over-limit prompt via the frozen large language model itself</p>
-          <p class="text-gray-700"><strong>Authors:</strong> <strong>Jun Gao</strong>, Ziqiang Cao, Wenjie Li</p>
-          <p class="text-gray-500 italic">Information Processing & Management  2024, Journal</p>
-
-          
+          <p class="text-slate-600 mt-2"><strong>Authors:</strong> <strong>Jun Gao</strong>, Ziqiang Cao, Wenjie Li</p>
+          <p class="text-slate-500 italic mt-1">Information Processing & Management 2024</p>
+        </li>
+        <li class="p-4 border border-slate-200 rounded-3xl bg-white">
           <p class="font-semibold">Guiding ChatGPT to generate salient domain summaries</p>
-          <p class="text-gray-700"><strong>Authors:</strong> <strong>Jun Gao</strong>, Ziqiang Cao, Shaoyao Huang, Luozheng Qin, Chunhui Ai</p>
-          <p class="text-gray-500 italic">IJCNN'2024 (Oral), Conference</p>
-
+          <p class="text-slate-600 mt-2"><strong>Authors:</strong> <strong>Jun Gao</strong>, Ziqiang Cao, Shaoyao Huang, Luozheng Qin, Chunhui Ai</p>
+          <p class="text-slate-500 italic mt-1">IJCNN 2024 (Oral)</p>
+        </li>
+        <li class="p-4 border border-slate-200 rounded-3xl bg-white">
           <p class="font-semibold">DNTextSpotter: Arbitrary-shaped scene text spotting via improved denoising training</p>
-          <p class="text-gray-700"><strong>Authors:</strong> Qian Qiao, Yu Xie, <strong>Jun Gao</strong>, Tianxiang Wu, Shaoyao Huang, Jiaqing Fan, Ziqiang Cao, Zili Wang, Yue Zhang</p>
-          <p class="text-gray-500 italic">ACM MM'24  2024, Conference</p>
-
-
+          <p class="text-slate-600 mt-2"><strong>Authors:</strong> Qian Qiao, Yu Xie, <strong>Jun Gao</strong>, Tianxiang Wu, Shaoyao Huang, Jiaqing Fan, Ziqiang Cao, Zili Wang, Yue Zhang</p>
+          <p class="text-slate-500 italic mt-1">ACM MM 2024</p>
+        </li>
+        <li class="p-4 border border-slate-200 rounded-3xl bg-white">
           <p class="font-semibold">ReMind: Understanding Deductive Code Reasoning in LLMs</p>
-          <p class="text-gray-700"><strong>Authors:</strong> <strong>Jun Gao</strong>, Yun Peng, Xiaoxue Ren</p>
-          <p class="text-gray-500 italic">arXiv, Preprint</p>
-
-          <p class="font-semibold">The bidirectional process reward model</p>
-          <p class="text-gray-700"><strong>Authors:</strong> Linyin Zhang*, <strong>Jun Gao*</strong>, Xiaoxue Ren, Ziqiang Cao</p>
-          <p class="text-gray-500 italic">arXiv, Preprint</p>
-        </div>
-
-      </div>
+          <p class="text-slate-600 mt-2"><strong>Authors:</strong> <strong>Jun Gao</strong>, Yun Peng, Xiaoxue Ren</p>
+          <p class="text-slate-500 italic mt-1">arXiv Preprint</p>
+        </li>
+      </ul>
     </section>
 
-    <!-- Internship Experience -->
-    <section class="mb-20">
-      <h2 class="section-title" style="font-size: larger;">Internship Experience</h2>
-      <div class="space-y-6">
-
-        <div class="card flex flex-col md:flex-row p-6 gap-4">
-          <img src="images/soul.png" class="w-28 h-28 object-contain" />
-          <div class="flex-1">
-            <h3 class="text-xl font-bold">Soul AI — Multimodal Team (So Aura Talent Program)</h3>
-            <p class="text-gray-700"><strong>Role:</strong> Research Intern</p>
-            <p class="text-gray-700"><strong>Mentor:</strong> <a class="text-blue-600 hover:underline" href="https://xinshengwang.github.io" target="_blank">Xinshen Wang</a></p>
-            <p class="text-gray-600 mt-1">Shanghai, China | Oct 2025 – Mar 2026</p>
-          </div>
-        </div>
-
-        <div class="card flex flex-col md:flex-row p-6 gap-4">
-          <img src="images/westlake.png" class="w-28 h-28 object-contain" />
-          <div class="flex-1">
-            <h3 class="text-xl font-bold">Westlake University</h3>
-            <p class="text-gray-700"><strong>Role:</strong> Visiting Student Researcher</p>
-            <p class="text-gray-700"><strong>Mentor:</strong> <a class="text-blue-600 hover:underline" href="https://tlin-taolin.github.io" target="_blank">Tao Lin</a></p>
-            <p class="text-gray-600 mt-1">Hangzhou, China | Oct 2024 – Dec 2024</p>
-          </div>
-        </div>
-
-        <div class="card flex flex-col md:flex-row p-6 gap-4">
-          <img src="images/polyu.png" class="w-28 h-28 object-contain" />
-          <div class="flex-1">
-            <h3 class="text-xl font-bold">The Hong Kong Polytechnic University</h3>
-            <p class="text-gray-700"><strong>Role:</strong> Research Assistant</p>
-            <p class="text-gray-700"><strong>Mentor:</strong> <a class="text-blue-600 hover:underline" href="https://polyunlp.github.io/home">Prof. Wenjie Li</a> and <a class="text-blue-600 hover:underline" href="https://liyongqi67.github.io">Yongqi Li</a></p>
-            <p class="text-gray-600 mt-1">Hong Kong, China | July 2024 – Oct 2024</p>
-          </div>
-        </div>
-
-      </div>
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <ul class="space-y-4 text-slate-700">
+        <li class="p-4 border border-slate-200 rounded-3xl bg-white">
+          <p class="font-semibold">Research Intern — Soul AI</p>
+          <p class="text-slate-600 mt-2">Multimodal Team, So Aura Talent Program</p>
+          <p class="text-slate-500 italic mt-1">Shanghai | Oct 2025 – Mar 2026</p>
+        </li>
+        <li class="p-4 border border-slate-200 rounded-3xl bg-white">
+          <p class="font-semibold">Visiting Researcher — Westlake University</p>
+          <p class="text-slate-600 mt-2">Research collaboration with Tao Lin</p>
+          <p class="text-slate-500 italic mt-1">Hangzhou | Oct 2024 – Dec 2024</p>
+        </li>
+        <li class="p-4 border border-slate-200 rounded-3xl bg-white">
+          <p class="font-semibold">Research Assistant — The Hong Kong Polytechnic University</p>
+          <p class="text-slate-600 mt-2">Research with Wenjie Li and Yongqi Li</p>
+          <p class="text-slate-500 italic mt-1">Hong Kong | July 2024 – Oct 2024</p>
+        </li>
+      </ul>
     </section>
   </main>
 
-  <footer class="text-center text-sm text-gray-500 py-8">
-    © 2025 Jun Gao (高俊), Zhejiang University
+  <footer class="text-center text-sm text-slate-500 py-8">
+    © 2026 Jun Gao (高俊) — AI Researcher
   </footer>
 </body>
 </html>
